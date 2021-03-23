@@ -1,0 +1,39 @@
+dependencies {
+
+    implementation "com.google.dagger:dagger:${versions.dagger}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${versions.dagger}"
+
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:${versions.androidxArch}"
+
+    //LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:${versions.archLifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-runtime:${versions.archLifecycleVersion}"
+
+    //Room
+    implementation "androidx.room:room-runtime:${versions.room}"
+    annotationProcessor "androidx.room:room-compiler:${versions.room}"
+    debugImplementation "com.amitshekhar.android:debug-db:${versions.room_debug}"
+    //=========================NETWORKING===================================
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+    implementation "com.squareup.retrofit2:converter-jackson:${versions.retrofitConverter}"
+    implementation "com.squareup.retrofit2:converter-gson:${versions.retrofitConverter}"
+
+    //Gson
+    implementation "com.google.code.gson:gson:${versions.gson}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${versions.loggingInterceptor}"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:${versions.glide}"
+
+    //Butterknife dependency
+    implementation "com.jakewharton:butterknife:${versions.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${versions.butterknife}"
+
+
+    //Pagination library
+    implementation "androidx.paging:paging-runtime:${versions.paging_version}"
+}
